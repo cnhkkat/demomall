@@ -168,7 +168,7 @@ export default {
       this.product.newPrice = this.goods.realPrice
       // 添加到购物车
       this.$store.dispatch('addCart',this.product).then(res =>{
-        console.log(res);
+        // console.log(res);
         this.message = res;
         this.isShow = true;
         setTimeout(() => {
